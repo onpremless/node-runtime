@@ -1,0 +1,22 @@
+{
+  "name": "@onpremless/example",
+  "version": "1.0.0",
+  "description": "Node 20 onpremless runtime example",
+  "scripts": {
+    "format:check": "prettier --check src/",
+    "format:write": "prettier --write src/",
+    "build": "rimraf dist && tsc",
+    "start": "npm build && node dist/index.js"
+  },
+  "author": "Ilya Sumbatyants",
+  "license": "MIT",
+  "dependencies": {
+    "@onpremless/node-20": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.2",
+    "prettier": "^3.1.0",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.2"
+  }
+}
